@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#navbarContainer {
+    background-color: #20202380;
+    backdrop-filter: blur(10px);
+    font-family: 'Audiowide';
+    z-index: 1;
+}
+
+a {
+    padding: 12px;
+    margin: 12px;
+    border-radius: 6px;
+}
+
+a:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.active {
+    color: var(--primary-color);
+}

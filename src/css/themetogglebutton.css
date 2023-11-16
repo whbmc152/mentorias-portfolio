@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#slider {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 32px;
+}
+
+input {
+    position: absolute;
+    visibility: hidden;
+}
+
+#slider::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: inset 10px 0px 0px 0px white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+input:checked ~ #slider {
+    background-color: #89bfe3;
+}
+
+input:checked ~ #slider::before {
+    transform: translateX(32px);
+    background-color: var(--primary-color);
+    box-shadow: none;
+}
+

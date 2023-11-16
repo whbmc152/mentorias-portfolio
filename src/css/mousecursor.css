@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spray {
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+}

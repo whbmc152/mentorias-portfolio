@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f7903b;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
+
+#container {
+  height: 100vh;
+  z-index: -100;
+}
+
+.dark {
+  background: url('../../public/dark-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  --primary-color: #f7903b;
+  --primary-background-color: #20202380;
+}
+
+.light {
+  background: url('../../public/light-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  --primary-background-color: lightgray;
+}
+
+/*----Font----*/
+
+@font-face {
+  font-family: Audiowide;
+  src: url('../../public/Audiowide.ttf');
+}
